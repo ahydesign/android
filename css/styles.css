@@ -1,0 +1,363 @@
+
+
+body{
+  color: #666;
+  background-color: #bd4932;
+  margin-top: 100px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+
+}
+
+
+.contentDiv {
+    position: absolute;
+    bottom: 10px;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    height: 80px;
+    width: 100px;
+    left: 50%;
+}
+
+.arrow:hover {
+    cursor: default;
+}
+
+
+h1{
+
+    font-family: 'Slabo 27px', serif;
+    font-size: 3em;
+    color: #404040;
+    padding-bottom: 20px;
+
+}
+
+h2,h4{
+    font-family: 'Slabo 27px', serif;
+    color: #404040;
+}
+
+h3{
+    font-family: 'Slabo 27px', serif;
+    color: #bd4932;
+}
+
+h5{
+  font-family: 'Slabo 27px', serif;
+  color: #bd4932;
+  font-size:30px;
+}
+
+
+#section0 .gap-front{
+    margin-top: -15%;
+}
+
+
+#section0{
+  background: url('../images/bg-header.png') no-repeat center bottom;
+  background-size: contain;
+  padding:0 10%;
+}
+
+
+#section1, #section2 , #section3, #section4, #section5 {
+  background: url('../images/bg-2.png') repeat-y center top;
+  background-size: contain;
+  padding:0 10%;
+}
+
+#section5{
+  background: url('../images/bg-footer.png') no-repeat center top;
+  background-size: contain;
+  padding:0 10%;
+}
+
+.btn-default {
+    color: #105b63;
+    border-color:#105b63;
+
+}
+
+.btn-default:hover {
+    background-color: #ffd34e;
+    color: #105b63;
+    border-color:#105b63;
+
+}
+
+
+.white{
+  color: #fff;
+}
+
+.small-text{
+  font-size: 0.8em;
+}
+
+.thumbnail{
+  border:none;
+
+}
+
+
+.thumbnail img{
+  display: inline-block;
+  border: 3px solid #fff;
+  padding: 10px;
+  margin:5px;
+}
+
+
+.gap{
+  padding-top: 30%;
+}
+
+
+
+
+
+
+
+
+img.selected {
+    border: 3px solid #ffd34e;
+}
+
+
+img:hover {
+    cursor: pointer;
+}
+
+img.col-centered {
+    margin: 0 auto;
+    cursor:default;
+}
+
+
+
+#result1, #result2, #result3{
+    display: none;
+
+
+}
+
+
+
+
+ #result3{
+  padding-bottom: 30px;
+ }
+
+
+
+
+
+
+
+@-webkit-keyframes fadeIn { 
+  from { opacity:0; } to { opacity:1; } 
+  from { transform: translateY(-50px) } to { transform: translateY(0px)}
+}
+@-moz-keyframes fadeIn {
+  from { opacity:0; } to { opacity:1; } 
+  from { transform: translateY(-50px) } to { transform: translateY(0px)} 
+}
+
+@keyframes fadeIn { 
+  from { opacity:0; } to { opacity:1; } 
+  from { transform: translateY(-50px) } to { transform: translateY(0px)} 
+
+}
+ 
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+ 
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+ 
+  -webkit-animation-duration:0.6s;
+  -moz-animation-duration:0.6s;
+  animation-duration:0.6s;
+}
+
+
+
+
+
+.item h2 {
+
+    position: absolute;
+    line-height: 125px;
+    width: 100%;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3em;
+    color: #105b63;
+    margin-left: -15px;
+} 
+
+
+svg {
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.circle_animation {
+  stroke-dasharray: 470; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 470;
+}
+
+circle{
+  stroke: #d38576;
+  stroke-width:20px;
+  fill: none;
+
+}
+
+.source{
+  font-size: 0.8em;
+  float: right !important;
+  color:#000;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+
+
+.api{
+  text-align: center;
+  border-bottom: #ffd34e solid 5px;
+  max-width: 30px;
+}
+
+.analytics{
+  border-bottom: #d38576 solid 5px;
+  max-width: 70px;
+  padding-top:30px;
+}
+
+.advers{
+  border-bottom: #105b63 solid 5px;
+  max-width: 85px;
+  padding-top:30px;
+}
+
+
+.networkaccess .circle_animation {
+    -webkit-animation: networkaccess 1s ease-out forwards;
+    animation: networkaccess 1s ease-out forwards;
+}
+
+.storage .circle_animation {
+    -webkit-animation: storage 1s ease-out forwards;
+    animation: storage 1s ease-out forwards;
+}
+
+.phonestat .circle_animation {
+    -webkit-animation: phonestat 1s ease-out forwards;
+    animation: phonestat 1s ease-out forwards;
+}
+
+.location .circle_animation {
+    -webkit-animation: location 1s ease-out forwards;
+    animation: location 1s ease-out forwards;
+}
+
+
+
+
+
+@-webkit-keyframes networkaccess {
+  to {stroke-dashoffset: 100;}
+}
+
+@keyframes networkaccess {
+  to {stroke-dashoffset: 100;}
+}
+
+@-webkit-keyframes storage {
+  to {stroke-dashoffset: 235;}
+}
+@keyframes storage {
+  to {stroke-dashoffset: 235;}
+}
+
+
+@keyframes phonestat {
+  to {stroke-dashoffset: 325;}
+}
+
+@-webkit-keyframes phonestat {
+  to {stroke-dashoffset: 325;}
+}
+
+@keyframes location {
+  to {stroke-dashoffset: 380;}
+}
+@-webkit-keyframes location {
+  to {stroke-dashoffset: 380;}
+}
+
+
+
+@media only screen and (min-width: 2500px) {
+  .gap-first{
+    padding-top: 30%;
+  }
+
+}
+
+@media only screen and (max-width: 1400px) {
+   .thumbnail img{
+    width: 130px;
+   }
+
+   .thumbnail{
+    background-color: transparent;
+   }
+
+}
+
+@media only screen and (max-width: 768px) {
+   .thumbnail img{
+    padding-left: 5px;
+    width: 100px;
+   }
+
+   #section0 h1{
+    margin-top: -20%;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+   .row.gap-first.section{
+    display: none;
+   }
+
+    #section0 h1{
+    margin-top: -20%;
+  }
+
+}
+
+

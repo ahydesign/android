@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/favcon.ico">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+    <title>Mobile App Privacy</title>
+
+
+
+  </head>
+
+<body>
+
+ <div id="fullpage" class="container-fluid">
+  <div class="row section" id="section0">
+
+      <div class="gap-front">
+      <h1 class="text-center col-xs-12 white"> Privacy at Risk: Android Mobile Applications </h1>
+      <p class="text-center white col-xs-12"> Apps may be getting more of your info than you think. Let's take a simple quiz to find out.</p>
+      </div>
+
+      
+       <div class="contentDiv col-sm-offset-4">
+      <img class="arrow col-sm-2" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png" />
+      </div>
+
+
+  </div>
+
+
+
+    <div class="row section" id="section1">
+      <h2 class="text-center col-xs-12">What apps do you have on your android smartphone?</h2>
+      <div class="fade-in row text-center">
+        <div id="Apps" class="col-lg-offset-1 col-lg-10 thumbnail">
+            <img id="Amazon" src="images/apps/amazon.png" alt="Amazon">
+            <img id="CandyC" src="images/apps/candycrush.png" alt="Candy Crush Saga">
+            <img id="Facebook" src="images/apps/facebook.png" alt="Facebook">
+            <img id="Gmaps" src="images/apps/gmaps.png" alt="Google Maps">
+            <img id="Instagram" src="images/apps/instagram.png" alt="Instagram">
+              
+            <img id="Kijiji" src="images/apps/kijiji.png" alt="Kijiji">
+            <img id="Kindle" src="images/apps/kindle.png" alt="Kindle">
+            <img id="Netflix" src="images/apps/netflix.png" alt="Netflix">
+            <img id="Pokemon" src="images/apps/pokemon.png" alt="Pokemon Go">
+            <img id="Skype" src="images/apps/skype.png" alt="skype">
+              
+            <img id="Tinder" src="images/apps/tinder.png" alt="Tinder">
+            <img id="Twitter" src="images/apps/twitter.png" alt="Twitter">
+            <img id="Uber" src="images/apps/uber.png" alt="Uber">  
+            <img id="Whatsapp" src="images/apps/whatsapp.png" alt="Whatsapp">
+            <img id="Utube" src="images/apps/utube.png" alt="Youtube"> 
+        </div>
+
+        <a href="https://play.google.com/store?hl=en" target="_blank" class="source col-sm-offset-6 col-sm-2">Source</a>
+        <div id="result1" class="result col-xs-12 text-center"></div>
+        <div id="result2" class="result col-xs-12 text-center"></div>
+        <div id="result3" class="result col-xs-12 text-center"></div>
+
+        <div class="col-xs-12 text-center">
+          <button class="btn btn-default btn-lg" id="gotest">Submit</button>
+            <button class="btn btn-default btn-lg" id="reset">Reset</button>
+            <button class="btn btn-default btn-lg" id="tryagain">Try Again</button>
+            
+        </div>
+      </div>
+    </div> <!-- END OF FIRST ROW SECTION-->
+
+
+
+    <div class="row section" id="section2">
+
+      <h1 class="col-xs-12 text-center">The Latest Tech for Collecting Personal Data</h1>
+      <div class="col-sm-5">
+        <p>In this digital age, smartphones has now became an essential tool for many people because of its convenience. Developers are constantly designing apps to help people with their everyday tasks and increase efficiency. There is no doubt about the growing demand for better designed apps with a variety of functionalities. However, many of these phone applications require user information in order to carry out certain tasks. The large amount of personal information collected could be broadcasted or even sold to third-party sources. This could possibly compromise the user’s privacy and personal data.</p>
+      </div>
+
+
+    <div class="col-sm-7" id="appsavail">
+      <canvas id="AppsAvail" width="600" height="400"></canvas>
+      <a href="https://www.statista.com/statistics/266210/number-of-available-applications-in-the-google-play-store/" target="_blank" class="source">Source</a>
+    </div>
+  </div>
+
+
+<!-- /////////////////////////////////////////////////////////SECTION 3 DATA SHARING RISKS-->
+
+  <div class="row section"  id="section3">
+    <h1 class="col-sm-12 text-center"> Data Sharing Risks </h1>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <h3>Full Network Access</h3>
+        <p>This allows the app to have access to the internet. If the function of your app doesn’t require communication with the outside world, chances are this permission is meant for ads. However full network access could also mean software updates, syncing or retrieving data online. </p>
+      </div>
+
+      <div class="col-sm-3">
+        <h3>Modify / Delete Storage</h3>    
+        <p>As suggested by the description, it gives the app permission to save, edit, or delete files on your phone. Most apps use this to store temporary files and logs, but in theory it has access to all of your documents, including your SD card, so be aware!</p>
+      </div>
+
+      <div class="col-sm-3">
+        <h3>Phone Status and Identity</h3> 
+        <p>This permission allows the app to recognize when a phone call is coming and when it is active. It can also access more of the sensitive information such as your phone number and your device’s IMEI number.</p>     
+      </div>
+
+      <div class="col-sm-3">
+        <h3>Location</h3> 
+        <p>This feature is used mostly by apps that wants to display relative content depending on your location. At the same time, it could also just be the implementation of location-based advertising.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="item networkaccess col-sm-3 text-center">
+          <h2>83%</h2>
+          <svg width="170" height="180">
+
+          <circle class="circle_animation" r="70" cy="85" cx="85"/></circle>
+
+          </svg>  
+          <p class="small-text">of the apps requires this permission.</p>
+      </div>
+
+      <div class="item storage col-sm-3 text-center">
+            <h2>54%</h2>
+            <svg width="170" height="180">
+             <g>
+              <circle class="circle_animation" r="70" cy="85" cx="85"/></circle>
+             </g>
+            </svg>
+            <p class="small-text">of the apps requires this permission.</p>
+      </div>
+
+      <div class="item phonestat col-sm-3 text-center">
+          <h2>35%</h2>
+          <svg width="170" height="180">
+           <g>
+            <circle class="circle_animation" r="70" cy="85" cx="85"/></circle>
+           </g>
+          </svg>
+          <p class="small-text">of the apps requires this permission.</p>
+      </div> 
+
+       <div class="item location col-sm-3 text-center">
+          <h2>24%</h2>
+          <svg width="170" height="180">
+           <g>
+            <circle class="circle_animation" r="70" cy="85" cx="85"/></circle>
+           </g>
+          </svg>
+          <p class="small-text">of the apps requires this permission.</p>
+          <a href="http://www.pewinternet.org/2015/11/10/apps-permissions-in-the-google-play-store/pi_2015-11-10_apps-permissions_3-02/" target="_blank" class="source">Source</a>
+      </div> 
+    </div>
+  </div>
+
+
+  <div class="row section" id="section4">
+    <h1 class="col-sm-12 text-center">Where Does Your Data Go?</h1> 
+    <div class="col-sm-9" id="datatravel">
+      <canvas id="DataTravel" width="600" height="300"></canvas>
+      <p class="source">Based on 55 apps that were tested. <a href="http://jots.pub/a/2015103001/index.php" target="_blank">Source</a></p>
+    </div>
+    <div class="col-sm-3">
+
+      <h4 class="api">API</h4>
+      <p>These third-party API domains provides access to code libraries and datasets necessary for the functionality of the app.</p>
+
+
+      <h4 class="analytics">Analytics</h4>
+      <p>Measures the usage of the app to help developers analyze and improve the application.</p>
+
+      <h4 class="advers">Advertising</h4>
+      <p>Self-explanatory - information is obtained for marketing purposes.</p>
+
+    </div>
+
+
+  </div>      
+  
+
+  <div class="row section" id="section5">
+    <div class="gap">
+      <h1 class="col-sm-12 text-center white">What can you do about it?</h1> 
+      <p class="col-sm-6 col-sm-offset-3 text-center white">It is inevitable that some of your information will be needed for the functionality of the app. After all, an app won’t be able to tell you the nearest coffee shop without knowing your location. The best defence is to always stay alert and be aware of what apps are asking from you. Don't just click “yes” to everything, but actually look at the permissions on what you’ve agreed to. If in doubt, don’t downloading the app. compromising your personal data for convenience or pleasure is just isn’t worth it.</p>
+    </div>
+  </div>    
+
+
+
+</div> <!--end of contaniner-->
+
+
+
+  <script src="js/jquery-3.1.0.min.js"></script>
+
+  <script type="text/javascript" src="js/scrolloverflow.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/chart.min.js"></script>
+
+<script type="text/javascript">
+//chart.js
+Chart.defaults.global.animation.duration = 2000;
+Chart.defaults.global.animation.easing = 'easeInOutBounce';
+Chart.defaults.global.legend.display = false;
+var ctx = document.getElementById("AppsAvail");
+var ctx2 = document.getElementById("DataTravel");
+
+
+
+//fullpage.js
+$(document).ready(function() {
+
+
+
+      $('#fullpage').fullpage({
+        'verticalCentered': true,
+        navigation: true,
+        navigationPosition: 'right',
+        //navigationTooltips: ['Intro', Quiz', 'The Privacy Issue', 'Data Sharing Risks', 'Where Do Your Data Go?'],
+
+
+
+    onLeave: function(index, nextIndex, direction){
+      var leavingSection = $(this);
+
+      //after leaving section 1
+      if(index == 2 && direction =='down'){
+        var AppsAvail = new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ["Dec'09", "Jul'10", "Jul'11", "Jun'12", "Jul'13", "Jul'14", "Jul'15" , "Sep'16"],
+              datasets: [{
+                  label: 'Number of Apps on Google Play',
+                  data: [16000, 70000, 250000, 600000, 1000000, 1300000,1600000,2400000],
+                  backgroundColor: ['#d38576','#d38576', '#d38576','#d38576','#d38576','#d38576', '#d38576','#d38576'],
+
+              }]
+            },
+            options: {
+              title: {
+                  display: true,
+                  text:"Number of Apps on Google Play",
+                  fontSize: 16,
+              }
+          }
+
+        });
+      }
+
+
+
+      else if(index == 4 && direction == 'down' || index == 6 && direction == 'up'){
+        var DataTravel = new Chart(ctx2, {
+            type: 'horizontalBar',
+            data: {
+                labels: ["google.com", "googleapis.com", "facebook.com", "exacttargetapis.com", "google-analytics.com", "ad-x.co.uk" , "scoreandresearch.com","2o7.net","doublecilck.net","fiksu.com","instagram.com"],
+                datasets: [{
+                    label: 'API',
+                    data: [39, 18, 12, 1, 3, 5,3,2,4,4,1],
+                  backgroundColor: ['#ffd34e','#ffd34e', '#ffd34e','#ffd34e', '#d38576','#d38576','#105b63','#d38576','#105b63','#105b63','#ffd34e'],
+            
+
+                }]
+            },
+
+            options: {
+              scales: {
+                xAxes: [{
+                  display: true,
+                  ticks: {
+                    max: 55, 
+                  }
+                }]
+              }
+            }
+
+        });
+      }
+    }
+
+
+
+      });
+    });
+
+
+
+</script>
+
+
+  </body>
+</html>
+
+
